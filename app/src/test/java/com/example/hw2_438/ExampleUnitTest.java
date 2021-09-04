@@ -13,21 +13,21 @@ public class ExampleUnitTest {
 
     public login loginActivity;
     @Test
-    public void testUsernameInvalidPassword() {
+    public void invalidPass() {
         String username = "lexi";
         String password = "lmfao";
         assertEquals("wrong password", login.isValidCredentials(username, password));
     }
 
     @Test
-    public void testPasswordInvalidUsername() {
+    public void invalidUser() {
         String username = "jamesCharles";
         String password = "123";
         assertEquals("wrong user", login.isValidCredentials(username, password));
     }
 
     @Test
-    public void testValidLogin() {
+    public void valid() {
         String username = "lexi";
         String password = "lol";
         assertEquals("valid", login.isValidCredentials(username, password));
