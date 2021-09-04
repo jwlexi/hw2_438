@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import java.util.Map;
-
 public class login extends AppCompatActivity {
     private String user = "lexi", pass = "lol";
     @Override
